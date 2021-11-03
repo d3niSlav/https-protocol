@@ -1,0 +1,110 @@
+.ssl-handshake {
+    width: 100%;
+    padding-top: 50px;
+
+    table {
+        margin: 0 auto;
+    }
+
+    tr {
+        height: 90px;
+
+        &:nth-last-child(2) {
+            height: 35px;
+        }
+
+        &:last-child {
+            height: auto;
+            opacity: 0.7;
+        }
+    }
+
+    th {
+        font-size: 24px;
+        font-weight: 900;
+
+        &.text-right {
+            padding-right: 80px;
+        }
+
+        &.text-left {
+            padding-left: 60px;
+        }
+    }
+
+    .client,
+    .server {
+        width: 200px;
+        height: 200px;
+    }
+
+    .client-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 20px 20px auto;
+        background: url('/img/laptop.png') no-repeat center;
+        background-size: contain;
+    }
+
+    .server-image {
+        width: 160px;
+        height: 160px;
+        margin: 20px auto 40px 20px;
+        background: url('/img/server.png') no-repeat center;
+        background-size: contain;
+    }
+
+    .client-message {
+        width: 330px;
+        text-align: right;
+    }
+
+    .server-message {
+        width: 330px;
+        text-align: left;
+    }
+
+    .direction {
+        width: 150px;
+
+        .line {
+            position: relative;
+            margin: 20px 15px 0;
+            height: 2px;
+            background: $black;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                    top: -6px;
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+            }
+        }
+
+        &.left .line:after {
+            left: -1px;
+            border-right: 10px solid $black;
+        }
+
+        &.right .line:after {
+            right: -1px;
+            border-left: 10px solid $black;
+        }
+
+        &.both .line {
+            &:after {
+                left: -1px;
+                border-right: 10px solid $black;
+            }
+
+            &:before {
+                right: -1px;
+                border-left: 10px solid $black;
+            }
+        }
+    }
+}

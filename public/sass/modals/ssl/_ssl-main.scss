@@ -1,0 +1,340 @@
+/* SSL Intro Section */
+.intro {
+    margin-top: 50px;
+
+    .description-left {
+        padding-right: 50px;
+    }
+
+    .image-container img {
+        width: 100%;
+        padding-top: 25px;
+    }
+}
+
+/* Information Section */
+.info-box {
+    height: 200px;
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: $light-green;
+
+    .information-holder {
+        position: relative;
+        z-index: 10;
+        height: 200px;
+        margin-top: 25px;
+        background-color: #3c3c3c;
+    }
+
+    .image-container {
+        padding-top: 25px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .description-holder {
+        color: $white;
+        padding: 50px 70px 0 0;
+
+        a {
+            color: $light-green;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .highlighted-text {
+        color: $light-green;
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+/* SSL Additional Information Section */
+.additional-information {
+    padding: 90px 0 50px;
+    background-color: $metal-gray;
+
+    .image-container {
+        padding-right: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .description-holder {
+        padding-top: 30px;
+    }
+
+    a {
+        color: $green;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* SSL Authentication Section */
+.ssl-authentication {
+    padding: 50px 0;
+
+    .main-description {
+        margin-bottom: 20px;
+        padding: 0 90px;
+    }
+
+    .type-holder {
+        color: $black;
+
+        .number {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 25px auto 0;
+            padding: 20px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            background: $green;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            margin-top: 20px;
+        }
+    }
+
+    .additional-description {
+        margin: 25px 0;
+        padding: 0 90px;
+    }
+
+    .holder-row {
+        height: 270px;
+
+        .image-container {
+            height: 250px;
+            padding: 25px;
+            background-color: $light-green;
+
+            img {
+                display: block;
+                width: 200px;
+                margin: auto;
+            }
+        }
+
+        .holder-description {
+            display: table;
+            height: 250px;
+            padding: 0 20px;
+            color: $white;
+            background-color: $gray;
+
+            p {
+                display: table-cell;
+                margin-bottom: 20px;
+                padding: 15px;
+                font-size: 16px;
+                text-align: left;
+                vertical-align: middle;
+
+                span {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+/* SSL Implement Certificate Section */
+.implement-certificate {
+    padding-top: 50px;
+
+    h3 {
+        margin: 40px 0 30px;
+    }
+
+    .image-container {
+        padding-top: 35px;
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.ssl-needed-title {
+    padding: 50px 0 0;
+
+    h3 {
+        margin: 0 auto 20px;
+    }
+
+    .main-description {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .holder {
+        height: 190px;
+        padding: 20px;
+        background-color: $light-green;
+
+        img {
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* SSL When is Needed Section */
+.ssl-needed {
+    width: 100%;
+    padding: 0 0 40px;
+    background-color: $metal-gray;
+
+    .description {
+        min-height: 260px;
+        padding: 20px 25px 15px;
+        color: $white;
+        background-color: $gray;
+
+        h4 {
+            margin-top: 0;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .last-description {
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+}
+
+/* SSL Visual Implications Section */
+.visual-implications {
+    padding: 50px 0 110px;
+    background-color: $metal-gray;
+
+    .image-container {
+        padding-top: 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    a {
+        color: $green;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* SSL Certificate Work Section */
+.ssl-certificate-work {
+    .holder-image {
+        margin: 40px 0 30px;
+    }
+
+    ol li {
+        min-height: 55px;
+
+        &:before {
+            display: block;
+            float: left;
+            width: 27px;
+            margin: 3px 10px 7px 0;
+            padding: 7px 0;
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            background: $green;
+            border-radius: 4px;
+        }
+    }
+}
+
+/* SSL Error Section */
+.dark-light-section {
+    margin-top: -60px;
+    font-size: 16px;
+
+    h3 {
+        margin: 20px 0;
+    }
+
+    .dark-background {
+        margin-right: 45px;
+        padding: 40px 22px 30px;
+        color: $white;
+        background-color: $light-gray;
+
+        h3 {
+            margin-top: 0;
+            padding-right: 140px;
+        }
+    }
+
+    ul li {
+        margin-bottom: 15px;
+
+        &:before {
+            content: '• ';
+            font-size: 24px;
+            color: $light-green;
+        }
+    }
+}
+
+/* SSL Device Details Section */
+.ssl-detail {
+    min-height: 280px;
+    padding: 50px 0;
+    color: $white;
+    background-color: $light-gray;
+
+    &.dark {
+        background-color: $gray;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .holder-description {
+        display: table;
+        height: 100%;
+
+        .description {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

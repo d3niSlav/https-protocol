@@ -1,0 +1,91 @@
+.page-title {
+    padding: 50px 0 35px;
+    background-image: url('/img/cubes.jpg');
+
+    .row {
+        align-items: center;
+    }
+
+    .icon-container img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .heading {
+        padding: 10px 0 10px 50px;
+        color: $light-green;
+        font-size: 50px;
+        font-weight: 900;
+    }
+}
+
+.section-title {
+    margin: 0 0 20px 0;
+    color: $light-green;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.information {
+    font-family: $font-pt-sans;
+    color: $white;
+    padding: 50px;
+    background-color: $gray;
+}
+
+.list-information {
+    padding: 40px 0 30px;
+
+    ul {
+
+        ol {
+            padding: 25px 0 0 50px;
+
+            li {
+                counter-increment: item;
+
+                &:before {
+                    content: counter(item);
+                    display: inline-block;
+                    width: 1.2em;
+                    margin-right: 10px;
+                    color: white;
+                    text-align: center;
+                    background: $light-green;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        li {
+            margin-bottom: 15px;
+
+            &:before {
+                content: "• ";
+                font-size: 24px;
+                color: $light-green;
+            }
+        }
+    }
+
+    dl {
+        dt {
+            display: inline-block;
+            min-width: 200px;
+            height: 50px;
+            margin-bottom: 10px;
+            padding: 15px;
+            color: $white;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            background: $light-green;
+            border-radius: 12px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-left: 60px;
+        }
+    }
+}

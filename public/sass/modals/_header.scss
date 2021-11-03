@@ -1,0 +1,49 @@
+$headerHeight: 80px;
+
+#main-header {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: $headerHeight;
+    background-color: $white;
+    border-bottom: 5px solid $black;
+
+    .top-navigation {
+        height: 100%;
+
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            padding-top: 25px;
+            border-bottom: 3px solid transparent;
+            vertical-align: middle;
+
+            a {
+                color: $black;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            &.active {
+                border-bottom: 3px solid $green;
+            }
+        }
+
+        .logo-container img {
+            height: 75px;
+        }
+    }
+}
+
+.header-fix {
+    height: $headerHeight;
+}
